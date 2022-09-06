@@ -1,3 +1,5 @@
+Not operational!
+
 ___
 # **IMPORTANT: threedy v2.0**
 ### I am currently working on a rewrite for this card with `preact` instead of `react`. 
