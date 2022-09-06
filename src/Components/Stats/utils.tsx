@@ -56,7 +56,7 @@ const renderCondition = (
         case ThreedyCondition.ETA:
             return (
                 <TimeStat
-                    timeEntity={ entity( mqtt ? '_print_time_left' : '_time_remaining' ) }
+                    timeEntity={ entity( mqtt ? '_print_time_left' : '_estimated_finish_time' ) }
                     condition={condition}
                     config={config}
                     direction={0}
@@ -65,7 +65,7 @@ const renderCondition = (
         case ThreedyCondition.Elapsed:
             return (
                 <TimeStat
-                    timeEntity={ entity( mqtt ? '_print_time' : '_time_elapsed' ) }
+                    timeEntity={ entity( mqtt ? '_print_time' : '_start_time' ) }
                     condition={condition}
                     config={config}
                     direction={1}
@@ -75,7 +75,7 @@ const renderCondition = (
         case ThreedyCondition.Remaining:
             return (
                 <TimeStat
-                    timeEntity={ entity( mqtt ? '_print_time_left' : '_time_remaining' ) }
+                    timeEntity={ entity( mqtt ? '_print_time_left' : '_estimated_finish_time' ) }
                     condition={condition}
                     config={config}
                     direction={-1}
